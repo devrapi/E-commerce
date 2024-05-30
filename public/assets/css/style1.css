@@ -1,0 +1,112 @@
+
+@font-face {
+    font-family: Anton-Regular;
+    src: url('/assets/fonts/Anton-Regular.ttf');
+
+
+}
+.myh1{
+    font-family: Anton-Regular;
+
+    font-size: 120px;
+
+}
+@media (max-width: 1200px) {
+    .myh1 {
+        font-size: 2.25rem; /* Slightly smaller font size for large tablets and small laptops */
+    }
+}
+@media (max-width: 992px) {
+    .myh1 {
+        font-size: 2rem; /* Smaller font size for tablets */
+    }
+}
+@media (max-width: 768px) {
+    .myh1 {
+        font-size: 1.75rem; /* Smaller font size for large smartphones */
+    }
+}
+@media (max-width: 576px) {
+    .myh1 {
+        font-size: 1.5rem; /* Smallest font size for small smartphones */
+    }
+}
+.category-heading{
+    font-family: Anton-Regular;
+    font-size: 30px;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Set the height you want for all images */
+    overflow: hidden;
+}
+
+.custom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, border 0.5s ease;
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Add transition for smooth hover effect */
+    
+}
+
+.image-container:hover .logo-overlay {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    border: 2px solid #333;  /* Scale up the logo */
+    
+}
+.image-container:hover .custom-img {
+    transform: scale(1.2); /* Scale up the image on hover */
+    border: 2px solid #333; /* Add border when hovered over */
+
+
+}.product-image {
+    width: 100%;
+    height: 250px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure images cover the container without stretching */
+}
+
+.product-card {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    overflow: hidden; /* Prevent overflow in case of larger images */
+}
+.price-div{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-bottom: none;
+}
+.description{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-top: none;
+}
+/* .cover-img {
+    overflow: hidden; 
+}
+.cover-img img {
+    transition: transform 0.3s ease;
+}
+.cover-img img:hover {
+    transform: scale(1.05);
+} */
+.main-card{
+    transition: box-shadow 0.3s ease;
+}
+.main-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
